@@ -7,7 +7,6 @@ var twoSum=function(numbers,target){
         let sum=numbers[start]+numbers[end]
         if(sum==target){
             return [start+1,end+1];
-            break;
         }
         else{
             sum>target?end-- : start++;
@@ -24,7 +23,7 @@ var twoSum=function(numbers,target){
         let sum=numbers[start]+numbers[end]
         if(sum==target){
             return [start+1,end+1];
-            break;
+           
         }
         else if(sum>target){
             end--
@@ -42,7 +41,7 @@ var twoSum = function(numbers, target) {
             {
                 if(numbers[i]+numbers[j]==target){
                     return [i+1,j+1]
-                    break;
+                    
                 }
             }
     }
